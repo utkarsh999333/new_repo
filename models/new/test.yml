@@ -1,5 +1,5 @@
 models:
-  - name: orders
+  - name: stg_orders
     columns:
       - name: S_NAME
         tests:
@@ -10,7 +10,7 @@ models:
       - name: S_NAME
         tests:
           - relationships:
-              to: ref('orders')
+              to: ref('stg_orders')
               field: S_NAME
 
 
